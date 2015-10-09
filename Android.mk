@@ -93,8 +93,8 @@ BUSYBOX_C_INCLUDES = \
 	bionic/libc \
 	bionic/libm \
 	libc/kernel/common \
-	external/libselinux/include \
-	external/libsepol/include \
+	external/selinux/libselinux/include \
+	external/selinux/libsepol/include \
 	$(BB_PATH)/android/regex \
 	$(BB_PATH)/android/librpc
 

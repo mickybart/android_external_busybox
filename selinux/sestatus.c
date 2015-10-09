@@ -23,6 +23,15 @@ extern char *selinux_mnt;
 
 #define COL_FMT  "%-31s "
 
+int selinux_getenforcemode(int *rc)
+{
+	if (rc) {
+		*rc = security_getenforce();
+		return 0;
+	}
+	return -1;
+}
+
 static void display_boolean(void)
 {
 	char **bools;
